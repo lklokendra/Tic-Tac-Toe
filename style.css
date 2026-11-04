@@ -29,6 +29,50 @@ html,body{
 }
 body{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 50px;
+}
+#reset{
+  padding : 12px 30px;
+  background-color: #fb9489;
+   color: white;
+    border: solid rgb(253, 81, 81);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#reset:hover{
+  background-color: rgb(253, 81, 81);
+  transform: scale(1.05);
+}
+#scoreboard {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#xScore, #oScore {
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    cursor: default;
+}
+
+#xScore {
+    background-color: #5b95f3;
+    border: solid  #3381ff;
+    color: white;
+}
+
+#oScore {
+    background-color: #eac75c;
+    border: solid  #f1bb1a;
+    color: black;
 }
